@@ -1,8 +1,8 @@
 function resumedownload(){
-  const pdfUrl = './assets/resume.pdf';
+  const pdfUrl = './assets/Resume(Kshitij_Negi).pdf';
   const anchorElement = document.createElement('a');
   anchorElement.href = pdfUrl;
-  anchorElement.download = 'Kshitij_Resume.pdf';
+  anchorElement.download = 'Resume(Kshitij_Negi).pdf';
   // document.body.appendChild(anchorElement);
   anchorElement.click();
   // document.body.removeChild(anchorElement);
