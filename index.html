@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Portfolio</title>
+    <style>
+      table, td{
+        display: inline;
+        padding: 0; 
+        margin: 0;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <!-- Profile Section -->
+      <div class="item" id="profile"> 
+          <!-- Name and subhead -->
+          <div id="name_head">
+            <!-- Picture -->
+            <div id="picture" anchor="profile">
+              <img src="./img/photo.png" alt="profile_picture"> 
+            </div>
+            <p id="name">Kshitij Negi</p>
+            <p id="subhead">Full Stack Developer<p>
+          </div>
+          <!-- Social Media -->
+          <div id="socialm">
+            <li><a href="https://www.linkedin.com/in/kshitij-negi12/" target="_blank"><img src="./img/linkedin.png" alt="linkedin" height="40%"></a></li>
+            <li><a href="https://github.com/KshitijNegi12" target="_blank"><img src="./img/github.png" alt="github" height="40%"></a></li>
+            <li><a href="https://twitter.com/KshitijNegi21" target="_blank"><img src="./img/twitter.png" alt="twitter" height="36%"></a></li>
+            <li><a href="https://www.instagram.com/kshitij_negi_/" target="_blank"><img src="./img/instagram.png" alt="instagram" height="40%"></a></li>
+          </div>
+          <!-- Contacts -->
+          <div id="contact">
+            <li class="conts"><a href="mailto:23kshitij.negi@gmail.com"><img src="./img/email.png" alt="email">23kshitij.negi@gmail.com</i></a></li>
+            <li class="conts"><a href="tel:+917464858974"><img src="./img/phone.png" alt="number">+91 746-485-8974</a></li>
+            <li class="conts" style="margin-bottom: 2%;"><img src="./img/location.png" alt="location">Uttrakhand, India</li>
+          </div>
+          <!-- Resume Button -->
+          <button id="btn" onclick="resumedownload()">
+              <img src="./img/download.png" alt="download" width="38">
+              Resume
+          </button>
+      </div>
+
+      <!-- Content -->
+      <div class="item" id="content">
+        <iframe src="./about.html" id="myframe" name="this" frameborder="0"></iframe>
+      </div>
+
+      <!-- Bar -->
+      <div class="item" id="bar">
+        <!-- B1 -->
+        <button class="bar-btn" style="box-shadow: 5px 5px rgb(48, 44, 44); background-color: #2492FF;" onclick="btnshadow(0, './about.html')">
+          <img src="./img/person.svg" alt="person"> <br>
+          <span>About</span>
+        </button>
+        <!-- B2 -->
+        <button class="bar-btn" onclick="btnshadow(1, './projects.html')">
+          <img src="./img/projects.svg" alt="projects"> <br>
+          <span>Projects</span>
+        </button>
+        <!-- B3 -->
+        <button class="bar-btn" onclick="btnshadow(2, './achievements.html')">
+          <img src="./img/certificates.svg" alt="achievements" > <br>
+          <span style="font-size: 65%; position: relative; top: -10%;">Achievements</span>
+        </button>
+        <!-- B4 -->
+        <button class="bar-btn" onclick="btnshadow(3, './contacts.html')">
+          <img src="./img/contacts.svg" alt="contacts"> <br>
+          <span>Contact</span>
+        </button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>About Me</title>
+    <style>
+        *{
+            font-family: 'Lora';
+            margin: 0;
+            padding: 0;
+        }
+
+        #heading, h3{
+            margin: 2%;
+            font-family: 'Roboto Slab';
+        }
+
+        #heading::after{
+            content: "";
+            display: inline-block;
+            width: 40%;
+            border: 2px solid red;
+            margin-left: 2%;
+            border-radius: 5px;
+        }
+
+        #img-hello{
+            width: 30%;
+            float: right;
+        }
+
+        #img-hello img{
+            height: 100%;
+            width: 100%;
+        }
+
+        #intro{
+            margin: 2%;
+            font-size: 85%;
+            line-height: 150%;
+        }
+
+        #whatido{
+            margin: 5% 2%;
+        }
+
+        #skills{
+            width: 100%;
+            display: grid;
+            grid-template: 1fr 1fr / 1fr 1fr;
+            /* grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); */
+        }
+
+        .items{
+            /* width: 280px; */
+            margin: 2%;
+            padding: 4%;
+            border-radius: 5px;
+            display: grid;
+            grid-template: 1fr 2fr/ 1fr 5fr;
+            align-items: center;
+        }
+
+        .skill-txt{
+            font-size: 80%;
+            color: rgb(63, 63, 63);
+            line-height: 140%;
+        }
+
+        #horizontal-line {
+            position: relative;
+            width: 90%;
+            border-bottom: 2px solid #000; 
+            text-align: center;
+            margin: 7% 5%; 
+        }
+
+        .line-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff; 
+            padding: 0 10px; 
+        }
+
+    ::-webkit-scrollbar {
+        width: 10px; /* width of the scrollbar */
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #cacaca; 
+        border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #747474; 
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+        border-radius: 5px;
+    }
+         
+    @media (width < 549px){
+        #skills{
+            grid-template: 1fr 1fr 1fr 1fr /1fr;
+        }
+
+        .items:nth-child(3){
+            order: 1;
+        }
+    }
+    </style>
+</head>
+<body>
+    <h1 id="heading">About</h1>
+    <div class="container">
+        <!-- Intro and Image -->
+        <div id="first">
+            <div id="img-hello">
+                <img src="./img/hi.png" alt="hello">
+            </div>
+            <h3></h3>
+            <p id="intro">
+                Hi there👋!  My name is Kshitij, an undergraduate student at Graphic Era Hill University, Bhimtal,  pursuing my B.Tech in Computer Science and Engineering. 
+                As a passionate problem solver with in-depth knowledge of Data Structures and Algorithms, I am actively seeking opportunities to apply my skills to real-world challenges.
+                <br> <br>
+                I have a strong command of C/C++, along with a sound understanding of Java and Python.  Presently, my focus is directed toward mastering Full-Stack Web Development. I also harbor a budding interest in Android Development, eager to broaden my skill set and make meaningful contributions to the tech landscape.
+            </p>
+        </div>
+        <!-- What i do -->
+        <div id="whatido">
+            <h3 style="font-family: Roboto Slab;">What I Do!</h3>
+            <div id="skills">
+                <!-- DSA -->
+                <div class="items" style="background-color: #ffdbf3;">
+                    <div>
+                        <img src="./img/dsa.png" alt="dsa" width="80%">
+                    </div>
+                    <div>
+                        <h4>Data Structures & Algorithms</h4>
+                    </div>
+                    <div></div>
+                    <div>
+                        <p class="skill-txt">Having successfully solved over 800 problems in Data Structures & Algorithms, I am committed to mastering these foundational concepts.</p>
+                    </div>
+                </div>
+                <!-- WEBD -->
+                <div class="items" style="background-color: #a1eff5;" >
+                    <div>
+                        <img src="./img/webd.png" alt="dsa" width="80%">
+                    </div>
+                    <div>
+                        <h4>Web Development</h4>
+                    </div>
+                    <div></div>
+                    <div>
+                        <p class="skill-txt">I specialize in web development, where I'm currently in the exploration phase, honing my skills and delving into various technologies.</p>
+                    </div>
+                </div>
+                <!-- CP -->
+                <div class="items" style="background-color: #a1eff5;">
+                    <div>
+                        <img src="./img/android.png" alt="android" width="80%">
+                    </div>
+                    <div>
+                        <h4>Android Development</h4>
+                    </div>
+                    <div></div>
+                    <div>
+                        <p class="skill-txt">While I may not be an expert yet, I'm passionate about learning and committed to delivering quality results in every project I undertake.</p>
+                    </div>
+                </div>
+                <!-- Android -->
+                <div class="items" style="background-color: #ffdbf3;">
+                    <div>
+                        <img src="./img/competitive.png" alt="cp" width="80%">
+                    </div>
+                    <div>
+                        <h4>Competitive Programming</h4>
+                    </div>
+                    <div></div>
+                    <div>
+                        <p class="skill-txt">Always primed for competition, I eagerly participate in contests hosted by major tech companies, leveraging my skills honed through rigorous training and a solid LeetCode rating of 1600+.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Last line -->
+        <div id="horizontal-line">
+            <span class="line-text">Work in Progress 💪</span>
+        </div>
+    </div>
+</body>
+</html>
