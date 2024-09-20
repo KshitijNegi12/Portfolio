@@ -28,8 +28,8 @@ body{
 
 /* Section 1 */
 #profile{
-    height: min(70%, 430px);
-    width: 20%;
+    height: clamp(26rem, 60% ,30rem);
+    width: clamp(13rem,20%,15rem);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -127,7 +127,7 @@ body{
     background-color: #0E8BDB;
     color: white;
     border: 1px solid #bfbfbf;
-    width: 55%;
+    width: 50%;
     border-radius: 10px;
     margin-top: 10%;
     position: relative;
@@ -151,12 +151,13 @@ body{
 
 /* Section 3 */
 #bar{
-    height: min(55%, 400px);
+    height: clmap(20rem,55%,30rem);
     width: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1rem 0;
 }
 
 .bar-btn{
@@ -185,10 +186,11 @@ body{
 }
 
 /* Tablets */
-@media (992px <= width < 1200px) {  
+@media (62rem <= width < 75rem) {  
     #profile{
         width: 24%;
         margin-left: 0;
+        margin-top: 7rem;
     }
 
     #content{
@@ -202,7 +204,7 @@ body{
 }
 
 /* Landscape Tab */
-@media (768px <= width < 992px){
+@media (48rem <= width < 62rem){
     .container{
         display: grid;
         grid-template: 150px 2fr/ 1fr 2fr;
@@ -232,8 +234,7 @@ body{
         flex-direction: row;
         justify-content: space-around;
         order: -1;
-        width: 80%;
-        height: 60%;
+        width: 81%;
     }
 
     .bar-btn{
@@ -255,7 +256,7 @@ body{
 }
 
 /* Mobiles */
-@media (width < 768px){
+@media (width < 48rem){
     .container{
         height: 100%;
         width: 100%;
@@ -342,7 +343,7 @@ body{
     }
 }
 /* just a short expansion for better result */
-@media (567px < width <= 768px){
+@media (34.43rem < width <= 48rem){
     #content{
         width: 100%;
     }
