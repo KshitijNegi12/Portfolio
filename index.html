@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./static/style.css">
     <title>Portfolio</title>
     <link rel="icon" href="./img/icon.png" type="image/png">
     <style>
@@ -54,33 +54,33 @@
 
       <!-- Content -->
       <div class="item" id="content">
-        <iframe src="./about.html" id="myframe" name="this" frameborder="0"></iframe>
+        <iframe src="./templates/about.html" id="myframe" name="this" frameborder="0"></iframe>
       </div>
 
       <!-- Bar -->
       <div class="item" id="bar">
         <!-- B1 -->
-        <button class="bar-btn" style="box-shadow: 5px 5px rgb(48, 44, 44); background-color: #2492FF;" onclick="btnshadow(0, './about.html')">
+        <button class="bar-btn" style="box-shadow: 5px 5px rgb(48, 44, 44); background-color: #2492FF;" onclick="btnshadow(0, './templates/about.html')">
           <img src="./img/person.svg" alt="person"> <br>
           <span>About</span>
         </button>
         <!-- B2 -->
-        <button class="bar-btn" onclick="btnshadow(1, './projects.html')">
+        <button class="bar-btn" onclick="btnshadow(1, './templates/projects.html')">
           <img src="./img/projects.svg" alt="projects"> <br>
           <span>Projects</span>
         </button>
         <!-- B3 -->
-        <button class="bar-btn" onclick="btnshadow(2, './achievements.html')">
+        <button class="bar-btn" onclick="btnshadow(2, './templates/achievements.html')">
           <img src="./img/certificates.svg" alt="achievements" > <br>
           <span style="position: relative; top: -10%;">Achieved</span>
         </button>
         <!-- B4 -->
-        <button class="bar-btn" onclick="btnshadow(3, './contacts.html')">
+        <button class="bar-btn" onclick="btnshadow(3, './templates/contacts.html')">
           <img src="./img/contacts.svg" alt="contacts"> <br>
           <span>Contact</span>
         </button>
       </div>
     </div>
-    <script src="./script.js"></script>
+    <script src="./static/script.js"></script>
 </body>
 </html>
