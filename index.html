@@ -11,76 +11,64 @@
     <link rel="stylesheet" href="./static/style.css">
     <title>Portfolio</title>
     <link rel="icon" href="./img/icon.png" type="image/png">
-    <style>
-      table, td{
-        display: inline;
-        padding: 0; 
-        margin: 0;
-      }
-    </style>
 </head>
 <body>
     <div class="container">
-      <!-- Profile Section -->
-      <div class="item" id="profile"> 
-          <!-- Name and subhead -->
-          <div id="name_head">
-            <!-- Picture -->
-            <div id="picture" anchor="profile">
-              <img src="./img/photo.png" alt="profile_picture"> 
-            </div>
-            <p id="name">Kshitij Negi</p>
-            <p id="subhead">Full Stack Developer<p>
-          </div>
-          <!-- Social Media -->
-          <div id="socialm">
-            <li><a href="https://www.linkedin.com/in/kshitij-negi12/" target="_blank"><img src="./img/linkedin.png" alt="linkedin" height="40%"></a></li>
-            <li><a href="https://github.com/KshitijNegi12" target="_blank"><img src="./img/github.png" alt="github" height="40%"></a></li>
-            <li><a href="https://twitter.com/KshitijNegi21" target="_blank"><img src="./img/twitter.png" alt="twitter" height="36%"></a></li>
-            <li><a href="https://www.instagram.com/kshitij_negi_/" target="_blank"><img src="./img/instagram.png" alt="instagram" height="40%"></a></li>
-          </div>
-          <!-- Contacts -->
-          <div id="contact">
-            <li class="conts"><a href="mailto:23kshitij.negi@gmail.com"><img src="./img/email.png" alt="email">23kshitij.negi@gmail.com</i></a></li>
-            <li class="conts"><a href="tel:+917464858974"><img src="./img/phone.png" alt="number">+91 746-485-8974</a></li>
-            <li class="conts" style="margin-bottom: 2%;"><img src="./img/location.png" alt="location">Uttrakhand, India</li>
-          </div>
-          <!-- Resume Button -->
-          <button id="btn" onclick="resumedownload()">
-              <img src="./img/download.png" alt="download" width="38">
-              Resume
-          </button>
-      </div>
+      	<!-- Profile Section -->
+      	<div class="item" id="profile"> 
+          	<!-- Name and subhead -->
+          	<div id="name_head">
+            	<!-- Picture -->
+            	<div id="picture" anchor="profile">
+              		<img src="./img/photo.png" alt="profile_picture"> 
+            	</div>
+				<p id="name">Kshitij Negi</p>
+				<p id="subhead">Full Stack Developer</p>
+        	</div>
+          	<!-- Social Media -->
+          	<div id="socialm">
+				<li><a href="https://www.linkedin.com/in/kshitij-negi12/" target="_blank"><img src="./img/linkedin.png" alt="linkedin"></a></li>
+				<li><a href="https://github.com/KshitijNegi12" target="_blank"><img src="./img/github.png" alt="github"></a></li>
+				<li><a href="https://twitter.com/KshitijNegi21" target="_blank"><img src="./img/twitter.png" alt="twitter"></a></li>
+				<li><a href="https://www.instagram.com/kshitij_negi_/" target="_blank"><img src="./img/instagram.png" alt="instagram"></a></li>
+          	</div>
+			<!-- Contacts -->
+			<div id="contact">
+				<li class="conts"><a href="mailto:23kshitij.negi@gmail.com"><img src="./img/email.png" alt="email" width="15%">23kshitij.negi@gmail.com</i></a></li>
+				<li class="conts"><a href="tel:+917464858974"><img src="./img/phone.png" alt="number" width="15%">+91 746-485-8974</a></li>
+				<li class="conts" style="margin-bottom: 2%;"><img src="./img/location.png" alt="location" width="15%">Uttrakhand, India</li>
+			</div>
+			<!-- Resume Button -->
+			<button id="btn" onclick="resumedownload()">
+				<img src="./img/download.png" alt="download" width="38">
+				Resume
+			</button>
+     	</div>
 
       <!-- Content -->
-      <div class="item" id="content">
-        <iframe src="./templates/about.html" id="myframe" name="this" frameborder="0"></iframe>
-      </div>
+		<div class="item" id="content">
+			<iframe src="./templates/about.html" id="myframe" name="this" frameborder="0"></iframe>
+		</div>
 
-      <!-- Bar -->
-      <div class="item" id="bar">
-        <!-- B1 -->
-        <button class="bar-btn" style="box-shadow: 5px 5px rgb(48, 44, 44); background-color: #2492FF;" onclick="btnshadow(0, './templates/about.html')">
-          <img src="./img/person.svg" alt="person"> <br>
-          <span>About</span>
-        </button>
-        <!-- B2 -->
-        <button class="bar-btn" onclick="btnshadow(1, './templates/projects.html')">
-          <img src="./img/projects.svg" alt="projects"> <br>
-          <span>Projects</span>
-        </button>
-        <!-- B3 -->
-        <button class="bar-btn" onclick="btnshadow(2, './templates/achievements.html')">
-          <img src="./img/certificates.svg" alt="achievements" > <br>
-          <span style="position: relative; top: -10%;">Achieved</span>
-        </button>
-        <!-- B4 -->
-        <button class="bar-btn" onclick="btnshadow(3, './templates/contacts.html')">
-          <img src="./img/contacts.svg" alt="contacts"> <br>
-          <span>Contact</span>
-        </button>
-      </div>
-    </div>
+      	<!-- Bar -->
+		<div class="item" id="bar">
+			<!-- B1 -->
+			<button class="bar-btn" style="box-shadow: 5px 5px rgb(48, 44, 44); background-color: #2492FF;" onclick="btnshadow(0, './templates/about.html')">
+			<img src="./img/person.svg" alt="person"> <br>
+			<span>About</span>
+			</button>
+			<!-- B2 -->
+			<button class="bar-btn" onclick="btnshadow(1, './templates/projects.html')">
+			<img src="./img/projects.svg" alt="projects"> <br>
+			<span>Projects</span>
+			</button>
+			<!-- B3 -->
+			<button class="bar-btn" onclick="btnshadow(2, './templates/achievements.html')">
+			<img src="./img/certificates.svg" alt="achievements" > <br>
+			<span style="position: relative; top: -10%; left: -5%;">Achieved</span>
+			</button>
+		</div>
+  </div>
     <script src="./static/script.js"></script>
 </body>
 </html>
