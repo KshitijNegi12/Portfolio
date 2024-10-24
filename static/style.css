@@ -85,9 +85,9 @@ body{
 #name_head > #name{
     margin-top: 35%;
     text-align: center;
-    font-family: 'Merriweather';
-    font-size: 20px;
-    font-weight: 900;
+    font-size: 24px;
+    font-weight: 850;
+    letter-spacing:.5px;
 }
 
 #subhead{
