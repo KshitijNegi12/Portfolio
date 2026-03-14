@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
     <title>About Me</title>
     <style>
-        *{
+        * {
             font-family: 'Roboto Slab';
             margin: 0;
             padding: 0;
         }
-        
-        body{
+
+        body {
             font-size: 16px;
         }
 
-        #heading, h3{
+        #heading,
+        h3 {
             margin: 2%;
             font-family: 'Roboto Slab';
         }
 
-        #heading::after{
+        #heading::after {
             content: "";
             display: inline-block;
             width: 40%;
@@ -33,46 +36,46 @@
             border-radius: 5px;
         }
 
-        #img-hello{
+        #img-hello {
             width: 30%;
             float: right;
         }
 
-        #img-hello img{
+        #img-hello img {
             height: 100%;
             width: 100%;
         }
 
-        .intro{
+        .intro {
             margin: 2%;
             font-size: clamp(0.875rem, 0.802rem + 0.325vw, 1.188rem);
             line-height: 150%;
         }
 
-        .intro span{
+        .intro span {
             background-color: rgb(88, 88, 88);
             color: white;
             margin: 2px;
             padding: 0 8px;
             border-radius: 10px;
         }
-        
-        .gap{
+
+        .gap {
             line-height: 180%;
         }
 
-        #whatido{
+        #whatido {
             margin: 5% 2%;
         }
 
-        #skills{
+        #skills {
             width: 100%;
             display: grid;
             grid-template: 1fr / 1fr 1fr;
             /* grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); */
         }
 
-        .items{
+        .items {
             /* width: 280px; */
             margin: 2%;
             padding: 4%;
@@ -82,7 +85,7 @@
             align-items: center;
         }
 
-        .skill-txt{
+        .skill-txt {
             font-size: clamp(0.813rem, 0.739rem + 0.325vw, 1.125rem);
             line-height: 140%;
         }
@@ -90,9 +93,9 @@
         #horizontal-line {
             position: relative;
             width: 90%;
-            border-bottom: 2px solid #000; 
+            border-bottom: 2px solid #000;
             text-align: center;
-            margin: 7% 5%; 
+            margin: 7% 5%;
         }
 
         .line-text {
@@ -100,39 +103,41 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: #fff; 
-            padding: 0 10px; 
+            background-color: #fff;
+            padding: 0 10px;
         }
 
-    ::-webkit-scrollbar {
-        width: 10px; /* width of the scrollbar */
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background: #cacaca; 
-        border-radius: 5px;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-        background: #747474; 
-    }
-
-    ::-webkit-scrollbar-track {
-        background: #f1f1f1; 
-        border-radius: 5px;
-    }
-         
-    @media (width < 549px){
-        #skills{
-            grid-template: 1fr 1fr /1fr;
+        ::-webkit-scrollbar {
+            width: 10px;
+            /* width of the scrollbar */
         }
 
-        .items:nth-child(3){
-            order: 1;
+        ::-webkit-scrollbar-thumb {
+            background: #cacaca;
+            border-radius: 5px;
         }
-    }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #747474;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 5px;
+        }
+
+        @media (width < 549px) {
+            #skills {
+                grid-template: 1fr 1fr /1fr;
+            }
+
+            .items:nth-child(3) {
+                order: 1;
+            }
+        }
     </style>
 </head>
+
 <body>
     <h1 id="heading">About</h1>
     <div class="container">
@@ -144,51 +149,58 @@
             <h3></h3>
             <p class="intro">
                 Hi there👋! &nbsp; <b>Turning Ideas into Code.</b> <br>
-                <b> Education: &nbsp;</b> B.Tech in Computer Science and Engineering, Graphic Era Hill University, Bhimtal. <br>
+                <b> Education: &nbsp;</b> B.Tech in Computer Science and Engineering, Graphic Era Hill University,
+                Bhimtal. <br>
             </p>
             <p class="intro gap">
                 <b style="color: green;">Technical Skills:</b> <br>
-                <b>Specialization:</b> 
-                <span>Full-Stack Web Development</span> <br>
+                <b>Specialization:</b>
+                <span>Full-Stack Development</span>
+                <br>
 
-                <b>Languages:</b> 
-                <span>C</span>
+                <b>Languages:</b>
+                <!-- <span>C</span> -->
                 <span>C++</span>
                 <span>C#</span>
-                <span>Go</span>
                 <span>Javascript</span>
-                <span>Python</span> <br>
+                <span>Typescript</span>
+                <span>Go</span>
+                <br>
 
-                <b>Frontend Technologies/Framework:</b> 
+                <b>Frontend Technologies/Framework:</b>
                 <span>HTML</span>
-                <span>CSS</span> 
-                <span>Bootstrap</span>
-                <span>React.js</span>
-                <span>Vue.js</span> <br>
-                
-                <b>Backend Technologies/Framework:</b> 
-                <span>.NET</span> 
-                <span>Node.js</span> 
-                <span>Express.js</span> 
-                <span>Flask</span>
-                <span>RESTful APIs</span><br>
+                <span>CSS</span>
+                <span>Vue.js</span>
+                <span>Vuetify</span>
+                <br>
+
+                <b>Backend Technologies/Framework:</b>
+                <span>Node.js</span>
+                <span>.NET</span>
+                <span>RESTful APIs</span>
+                <span>Express.js</span>
+                <br>
 
                 <b>Databases:</b>
-                 <span>SQLServer</span> 
-                 <span>MySQL</span> 
-                 <span>Redis</span> <br>
+                <span>SQLServer</span>
+                <span>MongoDb</span>
+                <span>Redis</span>
+                <br>
 
-                <b>Tools:</b> 
-                <span>VSCode</span> 
-                <span>VS2022</span> 
-                <span>Git</span> 
-                <span>Postman</span> <br>
+                <b>Tools:</b>
+                <span>VSCode</span>
+                <span>VS2022</span>
+                <span>Git</span>
+                <span>Postman</span>
+                <br>
 
-                <b>Core Competencies:</b> 
-                <span>Data Structures & Algorithms (DSA)</span> 
-                <span>Object Oriented Programming System</span> 
-                <span>Database Management Systems</span> 
-                <span>Problem Solving</span> <br>
+                <b>Core Competencies:</b>
+                <span>Data Structures & Algorithms (DSA)</span>
+                <span>Object Oriented Programming System</span>
+                <span>Database Management Systems</span>
+                <span>Problem Solving</span>
+                <span>System Design</span>
+                <br>
             </p>
         </div>
         <!-- What i do -->
@@ -205,11 +217,12 @@
                     </div>
                     <div></div>
                     <div>
-                        <p class="skill-txt">Solved over <b>800+</b> Data Structures and Algorithms problems on platforms like <b>GeeksforGeeks, LeetCode, Coding Ninjas, CodeChef and CSES.</b></p>
+                        <p class="skill-txt">Solved over <b>800+</b> Data Structures and Algorithms problems on
+                            platforms like <b>GeeksforGeeks, LeetCode, Coding Ninjas, CodeChef and CSES.</b></p>
                     </div>
                 </div>
                 <!-- WEBD -->
-                <div class="items" style="background-color: #a1eff5;" >
+                <div class="items" style="background-color: #a1eff5;">
                     <div>
                         <img src="../img/webd.png" alt="dsa" width="80%">
                     </div>
@@ -218,7 +231,8 @@
                     </div>
                     <div></div>
                     <div>
-                        <p class="skill-txt">I specialize in web development, having built and <b>deployed websites</b> with both <b>backend</b> and <b>frontend</b> components. </p>
+                        <p class="skill-txt">I specialize in web development, having built and <b>deployed websites</b>
+                            with both <b>backend</b> and <b>frontend</b> components. </p>
                     </div>
                 </div>
                 <!-- CP -->
@@ -257,4 +271,5 @@
         </div>
     </div>
 </body>
+
 </html>

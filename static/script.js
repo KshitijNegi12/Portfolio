@@ -1,11 +1,6 @@
-function resumedownload(){
-  const pdfUrl = './assets/Resume(Kshitij_Negi).pdf';
-  const anchorElement = document.createElement('a');
-  anchorElement.href = pdfUrl;
-  anchorElement.download = 'Resume(Kshitij_Negi).pdf';
-  // document.body.appendChild(anchorElement);
-  anchorElement.click();
-  // document.body.removeChild(anchorElement);
+function showResume(){
+  const pdfUrl = 'https://drive.google.com/file/d/1ogyxw8rX4Fr72iivlQu9waNTY0SaWTbY/view?usp=sharingf';
+  window.open(pdfUrl, "_blank");
 }
 
 function btnshadow(index, docs){

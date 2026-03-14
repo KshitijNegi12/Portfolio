@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet" />
+
+  <title>Experience</title>
+
+  <style>
+    * {
+      font-family: "Roboto Slab";
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-size: 16px;
+    }
+
+    #heading {
+      margin: 2%;
+    }
+
+    #heading::after {
+      content: "";
+      display: inline-block;
+      width: 40%;
+      border: 2px solid rgb(93, 93, 207);
+      margin-left: 2%;
+      border-radius: 5px;
+    }
+
+    .container {
+      width: 90%;
+      margin: auto;
+    }
+
+    .timeline {
+      position: relative;
+      margin: 5% 0;
+      padding-left: 40px;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 12px;
+      top: 0;
+      width: 4px;
+      height: 100%;
+      background: #cfcfcf;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 40px;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: -32px;
+      width: 20px;
+      height: 20px;
+      background: #ff4d4d;
+      border-radius: 50%;
+    }
+
+    .timeline-content {
+      background: #f4f4f4;
+      padding: 18px;
+      border-radius: 6px;
+    }
+
+    .timeline-content h3 {
+      margin-bottom: 6px;
+    }
+
+    .timeline-content span {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .timeline-content p {
+      margin-top: 8px;
+      line-height: 150%;
+    }
+
+    #horizontal-line {
+      position: relative;
+      width: 90%;
+      border-bottom: 2px solid #000;
+      text-align: center;
+      margin: 7% 5%;
+    }
+
+    .line-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 0 10px;
+    }
+
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #cacaca;
+      border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #747474;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="heading">Experience</h1>
+
+  <div class="container">
+    <div class="timeline">
+      <!-- Current Work -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-content">
+          <h3>Associate Product Engineer</h3>
+          <span>DeltaX • July 2025 - Present</span>
+
+          <p>
+            Working on developing APIs, background services/workers, and
+            contributing to UI design and database design. Following proper
+            software architecture practices, focusing on maintainable
+            structure, scalability, and clean code in web application
+            development.
+          </p>
+        </div>
+      </div>
+
+      <!-- Internship -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>BootCamp</h3>
+          <span>DeltaX • Feb 2025 - July 2025</span>
+          <p>
+            Worked with the company tech stack including <b>C#, ASP.NET, SQL Server, Vue.js, and Vuetify</b>. Gained
+            experience in web development, backend API design, database integration, software architecture patterns, and
+            writing <b>production-grade code</b>. Used <b>Git</b> for version control.
+          </p>
+        </div>
+      </div>
+
+
+      <!-- College -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+
+        <div class="timeline-content">
+          <h3>B.Tech - Computer Science & Engineering</h3>
+          <span>Graphic Era Hill University, Bhimtal • July 2021 - July 2025</span>
+
+          <p>
+            Studied core computer science subjects including
+            <b>Data Structures, DBMS, OOP, Operating Systems</b> and Web Development.
+            Focused heavily on problem solving and logic building.
+          </p>
+        </div>
+
+        <!-- Last line -->
+        <div id="horizontal-line">
+          <span class="line-text">Journey 🚀</span>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
